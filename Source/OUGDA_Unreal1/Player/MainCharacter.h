@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Made by Natalie Soltis for OUGDA. This project is licensed under a GPLv3 license.
 
 #pragma once
 
@@ -6,11 +6,41 @@
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
 
+class UCameraComponent;
+class USpringArmComponent;
+
 UCLASS()
 class OUGDA_UNREAL1_API AMainCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+	//So here's 
+private:
+	//The camera that the player possessing this actor sees out of
+	UPROPERTY(EditDefaultsOnly)
+	UCameraComponent* CameraComponent;
+
+	//The thing we use to handle 3rd person perspective
+	UPROPERTY(EditDefaultsOnly)
+	USpringArmComponent* SpringArm;
+
+	UPROPERTY(EditAnywhere)
+	float cameraSensitivity;
+
+	UPROPERTY(EditAnywhere)
+	float playerSpeed;
+
+	//More might have to be added here...
+
+	//Input functions
+
+	void MoveForward(float value);
+	void MoveRight(float value);
+	void LookUp(float value);
+	void LookRight(float value);
+	void EquipItem(float value);
+
+	
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();

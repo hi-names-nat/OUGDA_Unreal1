@@ -67,7 +67,7 @@
 /DBUILT_FROM_CHANGELIST=23058290
 /DBUILD_VERSION=++UE5+Release-5.1-CL-23058290
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
-/DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
+/DPROJECT_COPYRIGHT_STRING="Made by Natalie Soltis for OUGDA. This project is licensed under a GPLv3 license."
 /DPROJECT_PRODUCT_IDENTIFIER=OUGDA_Unreal1
 /fo "F:\Documents\Unreal Projects\OUGDA\OUGDA_Unreal1\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLink\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"
